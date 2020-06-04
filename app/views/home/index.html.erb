@@ -1,0 +1,28 @@
+<% content_for(:head) do %>
+<% end %>
+
+<header id="pageHeader">Header</header>
+<article id="content" style="width: 70vw;">
+  <div id="game"></div>
+</article>
+<nav id="mainNav" style="width: 30vw;">
+  <div id="blockly" style="height: 100%; width: 100%;"></div>
+</nav>
+<footer id="pageFooter">
+  <div id="game-pad">
+    <div></div>
+    <button id="goUpButton" type="button">U</button>
+    <div></div>
+
+    <button id="goLeftButton" type="button">L</button>
+    <button id="goButton" type="button">G</button>
+    <button id="goRightButton" type="button">R</button>
+
+    <div></div>
+    <button id="goDownButton" type="button">D</button>
+    <div></div>
+  </div>
+  <div id="message"></div>
+</footer>
+
+<%= javascript_pack_tag('maze') %>

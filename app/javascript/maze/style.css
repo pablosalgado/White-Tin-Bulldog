@@ -1,0 +1,31 @@
+body {
+    display: grid;
+    grid-template-areas: "header header" "nav content" "footer footer";
+    grid-template-rows: 0vh 90vh 10vh;
+    grid-template-columns: 30vw 70vw;
+    margin: 0;
+}
+
+#pageHeader {
+    grid-area: header;
+}
+
+#pageFooter {
+    grid-area: footer;
+    background-color: aliceblue;
+}
+
+#content {
+    grid-area: content;
+    background-color: azure;
+}
+
+#mainNav {
+    grid-area: nav;
+    background-color: beige;
+}
+
+#game-pad {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
